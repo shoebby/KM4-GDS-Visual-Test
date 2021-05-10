@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            if (thrownObject)
+            if (thrownObject && thrownObject.GetComponent<BulletHitActivator>().invokeOnRethrow)
             {
                 thrownObject.GetComponent<BulletHitActivator>().hitEvent.Invoke();
             }
