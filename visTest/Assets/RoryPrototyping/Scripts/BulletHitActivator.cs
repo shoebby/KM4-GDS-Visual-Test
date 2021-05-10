@@ -9,6 +9,7 @@ public class BulletHitActivator : MonoBehaviour
     public UnityEvent hitEvent;
     public bool invokeOnCollision;
     public bool invokeOnTimer;
+    public bool invokeOnRethrow;
     public float timerDuration;
 
     private float startTime;
@@ -42,7 +43,7 @@ public class BulletHitActivator : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (hitEvent == null || !invokeOnCollision) { return; }
+        if (hitEvent == null || !invokeOnCollision || collision.gameObject.tag == "GravGrenade") { return; }
         hitEvent.Invoke();
     }
 }
