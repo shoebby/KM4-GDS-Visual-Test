@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 52032677}
   - component: {fileID: 52032679}
   - component: {fileID: 52032678}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 880180305}
   - component: {fileID: 880180304}
   - component: {fileID: 880180308}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Launchpad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 1069649529}
   - component: {fileID: 1069649528}
   - component: {fileID: 1069649531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327460293}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LevelBlocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 1662230891}
   - component: {fileID: 1662230890}
   - component: {fileID: 1662230894}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: JumpOnThisGround
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1290,26 +1290,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6451168019449147196, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
-        type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6451168019449147196, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6451168019449147196, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6451168019449147196, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.5132618
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccbcd4d40e23be94cbbedf95f10fb7b6, type: 3}
 --- !u!1 &1929362108
@@ -1443,7 +1423,7 @@ GameObject:
   - component: {fileID: 5000452485257935496}
   - component: {fileID: 3579022054398627789}
   - component: {fileID: 1788638432741683573}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 956588645183506139}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: shrooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,7 +1457,7 @@ GameObject:
   - component: {fileID: 7578738992783818137}
   - component: {fileID: 1500721977426214748}
   - component: {fileID: 4904159043418124180}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1523,7 @@ GameObject:
   - component: {fileID: 6910104469519405236}
   - component: {fileID: 1253226814461147339}
   - component: {fileID: 831157155561123924}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Shroom2
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1615,7 +1595,7 @@ GameObject:
   - component: {fileID: 8545469077875823736}
   - component: {fileID: 3656333298829983976}
   - component: {fileID: 853589915218150600}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,7 +1628,7 @@ GameObject:
   - component: {fileID: 748822049517582234}
   - component: {fileID: 2810509442428820222}
   - component: {fileID: 945782737679398862}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Shroom3
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1755,7 +1735,7 @@ GameObject:
   - component: {fileID: 3136834267777819276}
   - component: {fileID: 4825508670408916157}
   - component: {fileID: 1414944697567908192}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1862,7 +1842,7 @@ GameObject:
   - component: {fileID: 4909228533416909203}
   - component: {fileID: 2674000494519493680}
   - component: {fileID: 6849546360665545931}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1925,7 +1905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3372536489168945305}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_env_pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2018,7 @@ GameObject:
   - component: {fileID: 4795769487565754550}
   - component: {fileID: 744311102431174519}
   - component: {fileID: 3278889940291150155}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2190,7 +2170,7 @@ GameObject:
   - component: {fileID: 6018279491602939465}
   - component: {fileID: 7215242656777281581}
   - component: {fileID: 3542980587667725452}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2231,7 +2211,7 @@ GameObject:
   - component: {fileID: 6524799737641991133}
   - component: {fileID: 4161593467004906834}
   - component: {fileID: 4129866159148534705}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2305,6 +2285,75 @@ Transform:
   m_Father: {fileID: 3372536489168945305}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -27.908}
+--- !u!1001 &4705002133924553808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4705002134293224106, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_Name
+      value: BoidManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705002134293224107, guid: afe707df52d502e4e976e70fee2907e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: afe707df52d502e4e976e70fee2907e9, type: 3}
 --- !u!23 &4735044502576128914
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2355,7 +2404,7 @@ GameObject:
   - component: {fileID: 1723622332093722163}
   - component: {fileID: 6256914007251398335}
   - component: {fileID: 851967531418938325}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2381,7 +2430,7 @@ GameObject:
   - component: {fileID: 8364377683683673932}
   - component: {fileID: 8127812507317008290}
   - component: {fileID: 2707808866482570584}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2555,7 +2604,7 @@ GameObject:
   - component: {fileID: 6279002226696471882}
   - component: {fileID: 3765502988553927969}
   - component: {fileID: 4735044502576128914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shroom4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2703,7 +2752,7 @@ GameObject:
   - component: {fileID: 2846086182737214794}
   - component: {fileID: 2267220260315120649}
   - component: {fileID: 7147685148160311376}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mossy_rock_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2746,6 +2795,85 @@ Transform:
   m_Father: {fileID: 956588645183506139}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7992678136044681682
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7992678135623414745, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_Name
+      value: BoidSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414750, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414751, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: spawnCount
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992678135623414751, guid: 0f240e7150fef604799ccca25edf91ca,
+        type: 3}
+      propertyPath: spawnRadius
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f240e7150fef604799ccca25edf91ca, type: 3}
 --- !u!33 &8127812507317008290
 MeshFilter:
   m_ObjectHideFlags: 0

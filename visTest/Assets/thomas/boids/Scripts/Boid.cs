@@ -36,7 +36,8 @@ public class Boid : MonoBehaviour {
 
     void Awake () {
         material = transform.GetComponentInChildren<MeshRenderer> ().material;
-        targetObject = GameObject.FindGameObjectWithTag("Target"); //gebruik de Target tag voor de speler, kan ook anders maar dit is huidige oplossing
+        //targetObject = GameObject.FindGameObjectWithTag("Target"); //gebruik de Target tag voor de speler, kan ook anders maar dit is huidige oplossing
+        targetObject = GameObject.FindGameObjectWithTag("Player");  //voor nu is het toch altijd de speler
         target = targetObject.transform;
         cachedTransform = transform;
     }
@@ -145,6 +146,7 @@ public class Boid : MonoBehaviour {
     public void Death() //function that turns the boid into an unmoving rigidbody object
     {
         rb.useGravity = true;
+        rb.isKinematic = false;
         boidImmobilized = true;
         boidDead = true;
         rb.AddForce(transform.forward * 5f, ForceMode.Impulse);
@@ -153,6 +155,7 @@ public class Boid : MonoBehaviour {
     public void Reanimate()
     {
         rb.useGravity = false;
+        rb.isKinematic = true;
         boidDead = false;
     }
 
@@ -161,6 +164,7 @@ public class Boid : MonoBehaviour {
         if (boidDead == false)
         {
             rb.useGravity = true;
+            rb.isKinematic = false;
             boidImmobilized = true;
 
             yield return new WaitForSeconds(duration);
@@ -169,6 +173,7 @@ public class Boid : MonoBehaviour {
         if (boidDead == false)
         {
             rb.useGravity = false;
+            rb.isKinematic = true;
             boidImmobilized = false;
         }
     }
