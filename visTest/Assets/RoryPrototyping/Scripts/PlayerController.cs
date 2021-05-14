@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject fireFX, throwObject;
-    private GameObject thrownObject;
+    public GameObject throwLeft, throwRight;
+    public GameObject thrownLeft, thrownRight;
 
     private float rightKey, leftKey, upKey, downKey; //jumpKey, crouchKey, action1Key;
     private float grabKey;
@@ -127,19 +127,26 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            if (thrownObject && thrownObject.GetComponent<BulletHitActivator>().invokeOnRethrow)
+            if (thrownRight && thrownRight.GetComponent<BulletHitActivator>().invokeOnRethrow)
             {
-                thrownObject.GetComponent<BulletHitActivator>().hitEvent.Invoke();
+                thrownRight.GetComponent<BulletHitActivator>().hitEvent.Invoke();
             }
             else
             {
-                Throw();
+                Throw(throwRight, false);
             }
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            Fire();
+            if (thrownLeft && thrownLeft.GetComponent<BulletHitActivator>().invokeOnRethrow)
+            {
+                thrownLeft.GetComponent<BulletHitActivator>().hitEvent.Invoke();
+            }
+            else
+            {
+                Throw(throwLeft, true);
+            }
         }
 
         //set velocity from right and left keys
@@ -237,13 +244,14 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            /*
             if (Input.GetMouseButtonDown(1) && other.isTrigger && other.GetComponent<BulletHitActivator>())
             {
-                if (thrownObject)
+                if (thrownRight)
                 {
-                    thrownObject.GetComponent<BulletHitActivator>().hitEvent.Invoke();
+                    thrownRight.GetComponent<BulletHitActivator>().hitEvent.Invoke();
                 }
-            }
+            }*/
         }
     }
 
@@ -306,7 +314,7 @@ public class PlayerController : MonoBehaviour
             }
             
             //spawn hit fx
-            Instantiate(fireFX, hit.point, Quaternion.identity);
+            //Instantiate(fireFX, hit.point, Quaternion.identity);
 
             //when the shot object has a boid script, run their death function
             if (hit.collider.gameObject.GetComponentInParent<Boid>())
@@ -316,10 +324,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Throw()
+    void Throw(GameObject obj, bool left)
     {
-        thrownObject = Instantiate(throwObject, throwTrans.position, throwTrans.rotation);
-        thrownObject.GetComponent<Rigidbody>().AddForce((throwTrans.position - transform.position).normalized * throwForce);
+        if (left)
+        {
+            thrownLeft = Instantiate(obj, throwTrans.position, throwTrans.rotation);
+            thrownLeft.GetComponent<Rigidbody>().AddForce((throwTrans.position - transform.position).normalized * throwForce);
+        }
+        else
+        {
+            thrownRight = Instantiate(obj, throwTrans.position, throwTrans.rotation);
+            thrownRight.GetComponent<Rigidbody>().AddForce((throwTrans.position - transform.position).normalized * throwForce);
+        }
     }
 
     void StartGrapple()

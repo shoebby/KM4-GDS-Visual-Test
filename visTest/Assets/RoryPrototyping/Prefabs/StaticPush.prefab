@@ -168,8 +168,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: -20
-      minScalar: -2
+      scalar: 20
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -663,7 +663,7 @@ ParticleSystem:
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0.1
+    radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -746,7 +746,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 5
+      value: 2
       mode: 0
       spread: 0
       speed:
@@ -4813,7 +4813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4852b0656c30c5e49a40f76190eb4fbd, type: 2}
+  - {fileID: 2100000, guid: 0ac82a0388aad9a46a6ae80b5e419e32, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4864,7 +4864,7 @@ GameObject:
   - component: {fileID: 3037940716592201732}
   - component: {fileID: 3037940716592201728}
   m_Layer: 0
-  m_Name: StaticGrav
+  m_Name: StaticPush
   m_TagString: GravGrenade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4974,8 +4974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7111df61d1b87419ce00b3095509b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityForce: 30
-  minDistForGravity: 2
+  gravityForce: -30
+  minDistForGravity: 0
 --- !u!114 &3037940716592201728
 MonoBehaviour:
   m_ObjectHideFlags: 0

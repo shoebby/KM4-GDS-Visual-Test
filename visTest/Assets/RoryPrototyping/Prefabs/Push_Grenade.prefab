@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7139481374358074239}
   - component: {fileID: 7139481374358074236}
   m_Layer: 0
-  m_Name: Grav_Grenade
+  m_Name: Push_Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
         m_MethodName: Spawn
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3037940716592201735, guid: 1d86ddccbd9ac844098b49330086e867,
+          m_ObjectArgument: {fileID: 3037940716592201735, guid: 5e287179d3d8d7b4a9a3d14d8a002e5f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -175,5 +175,5 @@ MonoBehaviour:
   invokeOnCollision: 1
   invokeOnTimer: 0
   invokeOnRethrow: 1
-  left: 0
+  left: 1
   timerDuration: 0

@@ -10,8 +10,10 @@ public class BulletHitActivator : MonoBehaviour
     public bool invokeOnCollision;
     public bool invokeOnTimer;
     public bool invokeOnRethrow;
+    public bool left;
     public float timerDuration;
 
+    private GameObject spawnInstance;
     private float startTime;
 
     private void Start()
@@ -33,7 +35,19 @@ public class BulletHitActivator : MonoBehaviour
 
     public void Spawn(GameObject obj)
     {
-        Instantiate(obj, transform.position, Quaternion.identity);
+        spawnInstance = Instantiate(obj, transform.position, Quaternion.identity);
+    }
+
+    public void GiveSpawnReferenceToPlayer()
+    {
+        if (left)
+        {
+            FindObjectOfType<PlayerController>().thrownLeft = spawnInstance;
+        }
+        else
+        {
+            FindObjectOfType<PlayerController>().thrownRight = spawnInstance;
+        }
     }
 
     public void DestroyObject()

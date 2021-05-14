@@ -159,16 +159,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab347e71cb21ee47b7aad57dd353329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireFX: {fileID: 7190317735095346959, guid: 66865183e2c44ca4a81d07f8fe32ffe7, type: 3}
-  throwObject: {fileID: 7139481374358074237, guid: 6f0cc8d40758ffb46a47d023e37e5042,
+  throwLeft: {fileID: 7139481374358074237, guid: bbcbba77f5fc4d34292ff3f9cfccf3cf,
     type: 3}
+  throwRight: {fileID: 7139481374358074237, guid: 6f0cc8d40758ffb46a47d023e37e5042,
+    type: 3}
+  thrownLeft: {fileID: 0}
+  thrownRight: {fileID: 0}
   cam: {fileID: 6451168019392673336}
   throwTrans: {fileID: 6451168019943414784}
   dragPoint: {fileID: 6451168020240354652}
   swingPoint: {fileID: 8730056888594979666, guid: 9145d2721968e8342a973e50084b5123,
     type: 3}
   rope: {fileID: 7392835094508201047, guid: 702d4d31d52689e4193ad251d977bac9, type: 3}
-  jumpVel: 5
+  jumpVel: 12
   moveVel: 30
   maxSpeed: 15
   sensitivity_x: 80
