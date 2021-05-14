@@ -163,5 +163,5 @@ MonoBehaviour:
         m_CallState: 2
   invokeOnCollision: 1
   invokeOnTimer: 0
-  invokeOnRethrow: 0
+  invokeOnRethrow: 1
   timerDuration: 0
