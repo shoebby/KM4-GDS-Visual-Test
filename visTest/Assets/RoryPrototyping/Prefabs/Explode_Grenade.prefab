@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 325847139792862749}
   - component: {fileID: 325847139792862753}
   - component: {fileID: 325847139792862752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Explode_Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,4 +151,6 @@ MonoBehaviour:
         m_CallState: 2
   invokeOnCollision: 0
   invokeOnTimer: 0
+  invokeOnRethrow: 0
+  left: 0
   timerDuration: 0
