@@ -4976,6 +4976,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravityForce: 30
   minDistForGravity: 2
+  radius: 0
+  overTime: 1
 --- !u!114 &3037940716592201728
 MonoBehaviour:
   m_ObjectHideFlags: 0

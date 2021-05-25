@@ -7,9 +7,11 @@ public class GravityGrenade : MonoBehaviour
     public float gravityForce;
     public float minDistForGravity;
     public float radius;
+    public bool overTime;
 
     private void OnTriggerStay(Collider other)
     {
+        if (!overTime) { return; }
         if (GetComponent<SphereCollider>())
         {
             if (GetComponent<SphereCollider>().isTrigger)
