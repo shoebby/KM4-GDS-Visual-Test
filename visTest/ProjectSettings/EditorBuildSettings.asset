@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Controls.unity
     guid: c95ad5fa3c0ccb344b2cd2e4153ea83c
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/AranLevel.unity
+    guid: 8664ce0cef622684592d63fe892a879a
+  - enabled: 1
+    path: Assets/Scenes/AranLevel2.unity
+    guid: c25ae57fe998d2c4989d18e106a732e7
+  - enabled: 1
+    path: Assets/thomas/thomasLevel.unity
+    guid: 1299e1d4921bfc04ebcfab574cf0cdd1
   m_configObjects: {}
