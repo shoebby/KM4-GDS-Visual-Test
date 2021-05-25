@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public GameObject throwLeft, throwRight;
     public GameObject thrownLeft, thrownRight;
 
+    private UI_Bars leftCharge, rightCharge;
+
     private float rightKey, leftKey, upKey, downKey; //jumpKey, crouchKey, action1Key;
     private float grabKey;
 
@@ -80,6 +82,18 @@ public class PlayerController : MonoBehaviour
         dragVec = dragPoint.transform.localPosition;
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        foreach (UI_Bars bar in GetComponents<UI_Bars>())
+        {
+            if(bar.mechanic == KeyCode.Mouse0)
+            {
+                leftCharge = bar;
+            }
+            else
+            {
+                rightCharge = bar;
+            }
+        }
     }
 
     void Update()
@@ -228,6 +242,7 @@ public class PlayerController : MonoBehaviour
         if (((1 << other.gameObject.layer) & ground_layer) != 0)
         {
             ground = true;
+            ReloadGrenades();
         }
 
         if (other.gameObject.tag == "death")
@@ -241,6 +256,7 @@ public class PlayerController : MonoBehaviour
         if (((1 << other.gameObject.layer) & ground_layer) != 0)
         {
             ground = true;
+            ReloadGrenades();
         }
         else
         {
@@ -269,6 +285,15 @@ public class PlayerController : MonoBehaviour
 
         //Show Game over screen
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void ReloadGrenades()
+    {
+        leftCharge.grenades_left = leftCharge.max_grenades;
+        leftCharge.cur_value = leftCharge.max_value;
+
+        rightCharge.grenades_left = rightCharge.max_grenades;
+        rightCharge.cur_value = rightCharge.max_value;
     }
 
     void Jump()
@@ -328,11 +353,17 @@ public class PlayerController : MonoBehaviour
     {
         if (left)
         {
+            if(leftCharge.grenades_left < 1) { return; }
+            leftCharge.grenades_left--;
+            leftCharge.StartCharging();
             thrownLeft = Instantiate(obj, throwTrans.position, throwTrans.rotation);
             thrownLeft.GetComponent<Rigidbody>().AddForce((throwTrans.position - transform.position).normalized * throwForce);
         }
         else
         {
+            if (rightCharge.grenades_left < 1) { return; }
+            rightCharge.grenades_left--;
+            rightCharge.StartCharging();
             thrownRight = Instantiate(obj, throwTrans.position, throwTrans.rotation);
             thrownRight.GetComponent<Rigidbody>().AddForce((throwTrans.position - transform.position).normalized * throwForce);
         }
@@ -414,6 +445,14 @@ public class PlayerController : MonoBehaviour
             Destroy(swing);
             lr = null;
         } 
+    }
+
+    public void ResetInputs()
+    {
+        rightKey = 0;
+        leftKey = 0;
+        upKey = 0;
+        downKey = 0;
     }
 
     void CheckInputs()

@@ -27,6 +27,7 @@ public class SceneTransitioner : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            other.GetComponent<PlayerController>().ResetInputs();
             SceneManager.LoadScene(nextScene);
         }
     }

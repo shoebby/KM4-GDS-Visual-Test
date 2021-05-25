@@ -33,17 +33,13 @@ public class UI_Bars : MonoBehaviour
         grenades_Left_Text.text = grenades_left.ToString();
         
         //If player uses grenade, the image will go to value 0 and one number will dissapear
-        if (Input.GetKeyDown(mechanic) && grenades_left >= 1f)
+        /* Moved this functionality to the player controller so we can cancel throwing a grenade
+        if (Input.GetKeyDown(mechanic) && grenades_left >= 1)
         {
             grenades_left -= grenades_gifted;
-            if (!charging)
-            {
-                cur_value = 0f;
-
-                InvokeRepeating("increasePowerUp", 0f, .5f); //name, time, repeatrate
-            }
-            //Debug.Log(grenades_left);
+            StartCharging();
         }
+        */
 
         if (cur_value < max_value)
         {
@@ -62,8 +58,15 @@ public class UI_Bars : MonoBehaviour
         //Debug.Log(charging);
     }
 
+    public void StartCharging()
+    {
+        if (charging) { return; }
+        cur_value = 0f;
+        InvokeRepeating("IncreasePowerUp", 0f, .5f); //name, time, repeatrate
+    }
+
     //Image will start filling after
-    void increasePowerUp()
+    void IncreasePowerUp()
     {
         cur_value += fillSpeed;
         Bar.fillAmount = (float)cur_value / (float)max_value;
