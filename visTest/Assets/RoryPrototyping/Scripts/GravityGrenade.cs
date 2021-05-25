@@ -20,7 +20,7 @@ public class GravityGrenade : MonoBehaviour
 
                 if ((transform.position - other.transform.position).magnitude > minDistForGravity)
                 {
-                    //other.gameObject.GetComponentInParent<Rigidbody>().AddForce((transform.position - other.transform.position).normalized * gravityForce);
+                    other.gameObject.GetComponentInParent<Rigidbody>().AddForce((transform.position - other.transform.position).normalized * gravityForce);
                 }
             }
         }
