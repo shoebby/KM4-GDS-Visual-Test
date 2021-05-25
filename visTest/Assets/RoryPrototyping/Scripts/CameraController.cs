@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour
 
     public Vector3 overviewOffset = new Vector3(20, 15, 40);
     public static Vector3 overviewPos;
+    public float clamp = 80;
     
     void Start()
     {
@@ -31,6 +32,10 @@ public class CameraController : MonoBehaviour
 
         transform.localPosition = Vector3.up * (cameraHeight - 0.5f);
         this.transform.rotation = player.rotation;
+
+        //clamp
+        rotY += this.transform.rotation.eulerAngles.x;
+        rotY = Mathf.Clamp(rotY, -80, 80);
 
         this.transform.rotation = Quaternion.Euler(rotY, player.rotation.eulerAngles.y, player.rotation.eulerAngles.z);
     }
