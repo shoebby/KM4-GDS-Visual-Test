@@ -4900,6 +4900,7 @@ MonoBehaviour:
   gravityForce: -500
   minDistForGravity: 0
   radius: 10
+  overTime: 0
 --- !u!114 &3037940716592201728
 MonoBehaviour:
   m_ObjectHideFlags: 0
