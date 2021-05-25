@@ -35,7 +35,7 @@ public class CameraController : MonoBehaviour
 
         //clamp
         rotY += this.transform.rotation.eulerAngles.x;
-        rotY = Mathf.Clamp(rotY, -80, 80);
+        rotY = Mathf.Clamp(rotY, -clamp, clamp);
 
         this.transform.rotation = Quaternion.Euler(rotY, player.rotation.eulerAngles.y, player.rotation.eulerAngles.z);
     }
