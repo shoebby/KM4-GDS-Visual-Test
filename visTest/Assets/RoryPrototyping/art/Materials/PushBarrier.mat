@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PushBarrier
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _ALPHAMODULATE_ON _RECEIVE_SHADOWS_OFF
+  m_ShaderKeywords: _RECEIVE_SHADOWS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -187,7 +187,7 @@ Material:
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Blend: 3
+    - _Blend: 0
     - _BlendMode: 0
     - _BumpScale: 1
     - _CoatMask: 0
@@ -221,7 +221,7 @@ Material:
     - _DistortionVectorScale: 2
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
@@ -273,7 +273,7 @@ Material:
     - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 1
     - _SpecularOcclusionMode: 1
-    - _SrcBlend: 2
+    - _SrcBlend: 5
     - _StencilRef: 0
     - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
@@ -313,7 +313,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - Color_9815B1FC: {r: 1, g: 0.18823531, b: 0, a: 0}
-    - _BaseColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 1}
+    - _BaseColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 0.23529412}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}

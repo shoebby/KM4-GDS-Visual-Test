@@ -12,12 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Controls.unity
     guid: c95ad5fa3c0ccb344b2cd2e4153ea83c
   - enabled: 1
-    path: Assets/Scenes/AranLevel.unity
-    guid: 8664ce0cef622684592d63fe892a879a
+    path: Assets/thomas/level_1.unity
+    guid: aa55068ea17ba1d42a5c6d8766f912c9
   - enabled: 1
-    path: Assets/Scenes/AranLevel2.unity
-    guid: c25ae57fe998d2c4989d18e106a732e7
+    path: Assets/thomas/level_2.unity
+    guid: 5d3410b14955bb84bbf179730f7a6ffa
   - enabled: 1
-    path: Assets/thomas/thomasLevel.unity
-    guid: 1299e1d4921bfc04ebcfab574cf0cdd1
+    path: Assets/thomas/level_3.unity
+    guid: 282972183ecac2e418722eb714d1e721
+  - enabled: 1
+    path: Assets/thomas/level_4.unity
+    guid: 2be8262a4f698564eab6cc0a3e9e88e6
+  - enabled: 1
+    path: Assets/thomas/level_5.unity
+    guid: cc4d704c8ac16f64da398daa85a01754
   m_configObjects: {}
