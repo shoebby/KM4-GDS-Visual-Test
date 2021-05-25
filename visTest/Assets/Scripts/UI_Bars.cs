@@ -67,7 +67,7 @@ public class UI_Bars : MonoBehaviour
     {
         cur_value += fillSpeed;
         Bar.fillAmount = (float)cur_value / (float)max_value;
-        Debug.Log(Bar.fillAmount);
+        //Debug.Log(Bar.fillAmount);
     }
 
     //If the bar is filled, a new grenade will be usable
