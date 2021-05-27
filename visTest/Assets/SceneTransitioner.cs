@@ -7,7 +7,7 @@ public class SceneTransitioner : MonoBehaviour
 {
     private Collider coll;
     public string nextScene;
-    public string currentScene;
+    private string currentScene;
 
     void Start()
     {
@@ -30,5 +30,10 @@ public class SceneTransitioner : MonoBehaviour
             other.GetComponent<PlayerController>().ResetInputs();
             SceneManager.LoadScene(nextScene);
         }
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(currentScene);
     }
 }
