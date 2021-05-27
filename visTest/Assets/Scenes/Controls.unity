@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -341,7 +341,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: -110}
+  m_AnchoredPosition: {x: -227, y: -111}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61528458
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Moving
+  m_text: Move & Jump
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e86a33912ab3c4c848a5d06a7ef263, type: 2}
   m_sharedMaterial: {fileID: 644046194766798691, guid: d5e86a33912ab3c4c848a5d06a7ef263,
@@ -391,15 +391,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.44
-  m_fontSizeBase: 26.44
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 11.6
   m_wordSpacing: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -28.937767, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -757,8 +757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -222, y: -29}
-  m_SizeDelta: {x: -522.4844, y: -230.24515}
+  m_AnchoredPosition: {x: -241, y: -18}
+  m_SizeDelta: {x: -597.2403, y: -278.49304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647101455
 MonoBehaviour:
@@ -831,7 +831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 42, y: 48}
+  m_AnchoredPosition: {x: 28, y: 47}
   m_SizeDelta: {x: -589.5156, y: -247.10596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674061139
@@ -883,7 +883,7 @@ GameObject:
   - component: {fileID: 869523581}
   - component: {fileID: 869523580}
   m_Layer: 5
-  m_Name: Grenade Throw
+  m_Name: PullGrenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -905,7 +905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249, y: -93}
+  m_AnchoredPosition: {x: 274, y: -108}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869523580
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Throw Grenade
+  m_text: Pull Grenade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e86a33912ab3c4c848a5d06a7ef263, type: 2}
   m_sharedMaterial: {fileID: 644046194766798691, guid: d5e86a33912ab3c4c848a5d06a7ef263,
@@ -955,8 +955,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.44
-  m_fontSizeBase: 26.44
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 911769469}
   - component: {fileID: 911769468}
   m_Layer: 5
-  m_Name: Shoot
+  m_Name: PushGrenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79, y: -110}
+  m_AnchoredPosition: {x: 30, y: -108}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911769468
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shoot
+  m_text: Push Grenade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e86a33912ab3c4c848a5d06a7ef263, type: 2}
   m_sharedMaterial: {fileID: 644046194766798691, guid: d5e86a33912ab3c4c848a5d06a7ef263,
@@ -1089,14 +1089,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.44
-  m_fontSizeBase: 26.44
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 11.6
@@ -1256,8 +1256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -222, y: 75}
-  m_SizeDelta: {x: -518.83624, y: -200.89258}
+  m_AnchoredPosition: {x: -241, y: 75}
+  m_SizeDelta: {x: -547.7741, y: -220.19173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653899174
 MonoBehaviour:
@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 255, y: 48}
+  m_AnchoredPosition: {x: 279, y: 48}
   m_SizeDelta: {x: -589.5156, y: -247.10596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829460767
