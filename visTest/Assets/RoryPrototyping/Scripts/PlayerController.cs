@@ -204,6 +204,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             justJumped = false;
+            ReloadGrenades();
         }
 
         //if it is a moving ship or something add force to the player to move along here
