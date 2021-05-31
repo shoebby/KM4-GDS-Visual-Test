@@ -14,11 +14,31 @@ public class deathSurface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!sceneTransitioner)
+        {
+            if (FindObjectOfType<SceneTransitioner>())
+            {
+                sceneTransitioner = FindObjectOfType<SceneTransitioner>().gameObject;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+           
+        }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
+        {
+            sceneTransitioner.GetComponent<SceneTransitioner>().ReloadScene();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
             sceneTransitioner.GetComponent<SceneTransitioner>().ReloadScene();
         }

@@ -19,11 +19,13 @@ public class UI_Bars : MonoBehaviour
     public Text grenades_Left_Text;
 
     public bool charging = false;
+    public bool showGrenadeCount = false;
 
     
   
     void Start()
     {
+        grenades_Left_Text.gameObject.SetActive(showGrenadeCount);
         cur_value = max_value;
         grenades_left = max_grenades;
     }
