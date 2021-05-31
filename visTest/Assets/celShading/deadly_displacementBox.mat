@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: deadly_displacementBig
+  m_Name: deadly_displacementBox
   m_Shader: {fileID: -6465566751694194690, guid: c376357a49ef7474a867b03cb6511159,
     type: 3}
   m_ShaderKeywords: 
@@ -67,12 +67,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_2DA672D6: 0
-    - Vector1_474C1383: 1
-    - Vector1_5546BC06: 200
+    - Vector1_474C1383: 0
+    - Vector1_5546BC06: 2
     - Vector1_E543BA6B: 0
-    - Vector1_EA00E541: 1
+    - Vector1_EA00E541: 0.5
     - _AlphaClip: 0
-    - _Amount: 60
+    - _Amount: 7
     - _Blend: 0
     - _BumpScale: 1
     - _Cull: 2
@@ -84,7 +84,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _OffsetAmount: 0
+    - _OffsetAmount: -1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
@@ -94,10 +94,10 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _speed: 0.1
+    - _speed: 0.2
     m_Colors:
     - Color_3166B844: {r: 0.82756364, g: 1, b: 0, a: 0}
-    - Color_9815B1FC: {r: 1, g: 0.49856088, b: 0, a: 0}
+    - Color_9815B1FC: {r: 1, g: 0.297639, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
