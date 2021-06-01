@@ -1075,7 +1075,7 @@ PrefabInstance:
     - target: {fileID: 6451168018590470344, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.25
+      value: -5.85
       objectReference: {fileID: 0}
     - target: {fileID: 6451168018590470344, guid: ccbcd4d40e23be94cbbedf95f10fb7b6,
         type: 3}
@@ -1478,48 +1478,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030629419201508273, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508273, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
-        type: 3}
       propertyPath: m_Name
       value: sceneTransitioner
       objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508273, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
       objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: nextScene
-      value: level_3
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: currentScene
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
-        type: 3}
-      propertyPath: levelLoadOffset.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
-        type: 3}
-      propertyPath: loadNextLevelBelow
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
-        type: 3}
-      propertyPath: nextLevelPositionOffset.x
+      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: nextLevelPositionOffset.y
-      value: -100
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bd9fb2ea7e1db14e874a471a4232f1b, type: 3}

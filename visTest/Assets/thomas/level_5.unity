@@ -7556,10 +7556,25 @@ PrefabInstance:
       propertyPath: loadNextLevelBelow
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9030629419201508274, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
         type: 3}
-      propertyPath: nextLevelPositionOffset.y
-      value: -100
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030629419501117275, guid: 8bd9fb2ea7e1db14e874a471a4232f1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bd9fb2ea7e1db14e874a471a4232f1b, type: 3}

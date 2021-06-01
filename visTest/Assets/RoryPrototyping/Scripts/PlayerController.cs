@@ -66,7 +66,12 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        if(FindObjectsOfType<PlayerController>().Length > 1) { gameObject.SetActive(false); }
+        // if we already have an active playercontroller disable this one
+        if(FindObjectsOfType<PlayerController>().Length > 1)
+        {
+            //gameObject.SetActive(false);
+        }
+
         rb = GetComponent<Rigidbody>();
         bc = GetComponents<BoxCollider>()[0];
         colliderSizeY = bc.size.y;

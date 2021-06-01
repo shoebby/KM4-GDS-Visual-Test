@@ -5,15 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitioner : MonoBehaviour
 {
+    public Material blankMaterial;
     public Vector3 nextLevelPositionOffset;
     public bool loadNextLevelBelow;
 
+    private static GameObject environmentCopy;
     private Collider coll;
     public string nextScene;
     private string currentScene;
 
     void Start()
     {
+        // if we already have an active SceneTransitioner disable this one
+        if (FindObjectsOfType<SceneTransitioner>().Length > 1)
+        {
+            GetComponentInChildren<MeshRenderer>().material = blankMaterial;
+            Destroy(this);
+        }
+
         coll = GetComponent<BoxCollider>();
         currentScene = SceneManager.GetActiveScene().name;
 
@@ -21,6 +30,15 @@ public class SceneTransitioner : MonoBehaviour
         {
             SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
             StartCoroutine(OffsetLoadedScene());
+        }
+
+        if (!environmentCopy)
+        {
+            Instantiate(FindObjectOfType<StayOnLoad>().gameObject, nextLevelPositionOffset, Quaternion.identity);
+        }
+        else
+        {
+            transform.position = nextLevelPositionOffset;
         }
     }
 
