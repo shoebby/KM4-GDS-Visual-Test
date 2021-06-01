@@ -12,9 +12,6 @@ public class StayOnLoad : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "")
-        {
-
-        }
+        
     }
 }

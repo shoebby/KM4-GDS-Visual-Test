@@ -34,7 +34,8 @@ public class SceneTransitioner : MonoBehaviour
 
         if (!environmentCopy)
         {
-            Instantiate(FindObjectOfType<StayOnLoad>().gameObject, nextLevelPositionOffset, Quaternion.identity);
+            GameObject instance = Instantiate(FindObjectOfType<StayOnLoad>().gameObject, nextLevelPositionOffset, Quaternion.identity);
+            Destroy(instance.GetComponent<StayOnLoad>());
         }
         else
         {
