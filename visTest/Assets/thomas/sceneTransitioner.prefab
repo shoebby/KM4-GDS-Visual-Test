@@ -14103,7 +14103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blankMaterial: {fileID: 2100000, guid: ce0c40f06b805e148abeaa35392cbf85, type: 2}
   nextLevelPositionOffset: {x: 0, y: -250, z: 0}
-  loadNextLevelBelow: 1
+  loadNextLevelBelow: 0
   nextScene: level_4
 --- !u!1 &9030629419501117274
 GameObject:

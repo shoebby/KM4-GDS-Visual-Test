@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
     {
         sens = script.sensitivity_x;
         spawnRot = transform.rotation;
+        Cursor.visible = false;
     }
 
     
