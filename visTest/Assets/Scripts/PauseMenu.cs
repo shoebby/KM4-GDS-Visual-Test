@@ -34,6 +34,12 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Resuming");
     }
 
+    public void LoadMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Scenes/MainMenu");
+    }
+
     void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
