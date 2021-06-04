@@ -19,4 +19,10 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Scenes/MainMenu");
+        Debug.Log("Returning to menu");
+    }
 }
