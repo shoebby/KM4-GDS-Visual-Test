@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     private bool ground, canJump, isGrappling;
     [HideInInspector] public bool justJumped;
+    [HideInInspector] public bool isSecondPlayer;
 
     private float velX, velZ;
     [HideInInspector] public float speed, distance;
@@ -69,7 +70,8 @@ public class PlayerController : MonoBehaviour
         // if we already have an active playercontroller disable this one
         if(FindObjectsOfType<PlayerController>().Length > 1)
         {
-            //gameObject.SetActive(false);
+            isSecondPlayer = true;
+            return;
         }
 
         rb = GetComponent<Rigidbody>();
@@ -104,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!PauseMenu.GameIsPaused)
+        if (!PauseMenu.GameIsPaused && !isSecondPlayer)
         {
             NormalActions();
         }
@@ -184,6 +186,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isSecondPlayer) { return; }
         if (speed < maxSpeed)
         {
             //like 45 for move vel
@@ -296,6 +299,7 @@ public class PlayerController : MonoBehaviour
 
     void ReloadGrenades()
     {
+        if (isSecondPlayer) { return; }
         leftCharge.grenades_left = leftCharge.max_grenades;
         leftCharge.cur_value = leftCharge.max_value;
 

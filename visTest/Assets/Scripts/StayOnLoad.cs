@@ -7,6 +7,10 @@ public class StayOnLoad : MonoBehaviour
 {
     void Start()
     {
+        if (FindObjectsOfType<StayOnLoad>().Length > 1)
+        {
+            Destroy(gameObject);
+        }
         DontDestroyOnLoad(gameObject);
     }
 

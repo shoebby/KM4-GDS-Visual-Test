@@ -11,8 +11,9 @@ public class SceneTransitioner : MonoBehaviour
 
     private static GameObject environmentCopy;
     private Collider coll;
-    public string nextScene;
-    private string currentScene;
+    private int nextScene;
+    private int currentScene;
+    private int lastBuildIndex;
 
     void Start()
     {
@@ -24,22 +25,30 @@ public class SceneTransitioner : MonoBehaviour
         }
 
         coll = GetComponent<BoxCollider>();
-        currentScene = SceneManager.GetActiveScene().name;
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+        lastBuildIndex = SceneManager.sceneCountInBuildSettings - 1;
 
-        if (SceneManager.sceneCount < 2 && loadNextLevelBelow)
+        if(SceneManager.GetActiveScene().buildIndex == lastBuildIndex)
         {
-            SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
-            StartCoroutine(OffsetLoadedScene());
-        }
-
-        if (!environmentCopy)
-        {
-            GameObject instance = Instantiate(FindObjectOfType<StayOnLoad>().gameObject, nextLevelPositionOffset, Quaternion.identity);
-            Destroy(instance.GetComponent<StayOnLoad>());
+            nextScene = 0;
         }
         else
         {
-            transform.position = nextLevelPositionOffset;
+            nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+            if (SceneManager.sceneCount < 2 && loadNextLevelBelow)
+            {
+                SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
+                StartCoroutine(OffsetLoadedScene());
+            }
+
+            if (!environmentCopy)
+            {
+                if (FindObjectOfType<StayOnLoad>())
+                {
+                    environmentCopy = Instantiate(FindObjectOfType<StayOnLoad>().gameObject, nextLevelPositionOffset, Quaternion.identity);
+                    Destroy(environmentCopy.GetComponent<StayOnLoad>());
+                }
+            }
         }
     }
 
@@ -47,7 +56,7 @@ public class SceneTransitioner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(currentScene);
+            ReloadScene();
         }
     }
 
@@ -56,12 +65,20 @@ public class SceneTransitioner : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.GetComponent<PlayerController>().ResetInputs();
+            if(nextScene == 0)
+            {
+                Destroy(FindObjectOfType<StayOnLoad>().gameObject);
+            }
             SceneManager.LoadScene(nextScene);
         }
     }
 
     public void ReloadScene()
     {
+        foreach(PlayerController pc in FindObjectsOfType<PlayerController>())
+        {
+            pc.ResetInputs();
+        }
         SceneManager.LoadScene(currentScene);
     }
 

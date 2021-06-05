@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MoveRelativeToPortal : MonoBehaviour
 {
-    Transform otherPlayer;
+    Transform otherPlayerTransform;
+    GameObject otherPlayer;
     public Transform portal;
 
     void Start()
@@ -21,22 +22,29 @@ public class MoveRelativeToPortal : MonoBehaviour
 
     void Update()
     {
-        if (FindObjectsOfType<PlayerController>().Length > 1 && !otherPlayer)
+        if (FindObjectsOfType<PlayerController>().Length > 1 && !otherPlayerTransform)
         {
             GameObject empty = new GameObject();
-            empty.transform.position = FindObjectsOfType<PlayerController>()[0].transform.position + FindObjectOfType<SceneTransitioner>().nextLevelPositionOffset;
-            empty.transform.rotation = FindObjectsOfType<PlayerController>()[0].transform.rotation;
-            Debug.Log(empty.transform.position);
-            otherPlayer = empty.transform;
 
-            FindObjectsOfType<PlayerController>()[0].gameObject.SetActive(false);
+            foreach (PlayerController pc in FindObjectsOfType<PlayerController>())
+            {
+                if (pc.isSecondPlayer)
+                {
+                    empty.transform.position = pc.transform.position + FindObjectOfType<SceneTransitioner>().nextLevelPositionOffset;
+                    empty.transform.rotation = pc.transform.rotation;
+                    otherPlayer = pc.gameObject;
+                }
+            }
+            otherPlayerTransform = empty.transform;
+
+            otherPlayer.gameObject.SetActive(false);
         }
 
-        if (!otherPlayer) { return; }
+        if (!otherPlayerTransform) { return; }
 
         Matrix4x4 playerCamMatrix = FindObjectOfType<PlayerController>().GetComponentInChildren<Camera>().transform.localToWorldMatrix;
         Matrix4x4 portalMatrix = portal.worldToLocalMatrix;
-        Matrix4x4 otherPlayerMatrix = otherPlayer.localToWorldMatrix;
+        Matrix4x4 otherPlayerMatrix = otherPlayerTransform.localToWorldMatrix;
 
         Matrix4x4 m = otherPlayerMatrix * portalMatrix * playerCamMatrix;
 
