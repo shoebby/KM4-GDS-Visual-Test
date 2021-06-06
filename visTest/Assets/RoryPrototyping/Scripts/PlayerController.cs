@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     public float crouchColliderSizeY = 1.3f, crouchTriggerSizeY = 1.3f;
     public LayerMask ground_layer, fireLayers;
 
+    public AudioSource jumpSoundSource;
+
     private bool ground, canJump, isGrappling;
     [HideInInspector] public bool justJumped;
     [HideInInspector] public bool isSecondPlayer;
@@ -181,6 +183,7 @@ public class PlayerController : MonoBehaviour
         if (ground && Input.GetKeyDown(KeyCode.Space) || canJump && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+            jumpSoundSource.Play();
         }
     }
 
