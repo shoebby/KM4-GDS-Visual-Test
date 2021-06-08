@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7139481374358074237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.3, y: 3.6, z: 12.4}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f15d403775935084e935f77bc31b3574, type: 2}
+  - {fileID: 2100000, guid: 5b84382d5d95257468447b123f86e2bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
         m_MethodName: Spawn
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 680450243353679727, guid: a6d1a506707a33e4885766d343b6d57e,
+          m_ObjectArgument: {fileID: 7190317735095346959, guid: 66865183e2c44ca4a81d07f8fe32ffe7,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0

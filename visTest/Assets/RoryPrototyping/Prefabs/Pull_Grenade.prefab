@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7139481374358074236}
   - component: {fileID: -1790116023077104469}
   m_Layer: 8
-  m_Name: Grav_Grenade
+  m_Name: Pull_Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f15d403775935084e935f77bc31b3574, type: 2}
+  - {fileID: 2100000, guid: 425fb59c9324fe14f8768cab0d1126c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
         m_MethodName: Spawn
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 680450243353679727, guid: a6d1a506707a33e4885766d343b6d57e,
+          m_ObjectArgument: {fileID: 7190317735095346959, guid: 66865183e2c44ca4a81d07f8fe32ffe7,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0

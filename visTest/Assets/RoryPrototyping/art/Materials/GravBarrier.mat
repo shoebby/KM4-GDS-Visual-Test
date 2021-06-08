@@ -25,7 +25,7 @@ Material:
   m_ShaderKeywords: _RECEIVE_SHADOWS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
@@ -191,7 +191,7 @@ Material:
     - _BlendMode: 0
     - _BumpScale: 1
     - _CoatMask: 0
-    - _Cull: 0
+    - _Cull: 2
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
@@ -313,7 +313,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - Color_9815B1FC: {r: 1, g: 0.18823531, b: 0, a: 0}
-    - _BaseColor: {r: 0.16143036, g: 0, b: 1, a: 0.24705882}
+    - _BaseColor: {r: 0, g: 1, b: 0.114498354, a: 0.7294118}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
