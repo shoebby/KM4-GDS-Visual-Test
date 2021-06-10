@@ -15,29 +15,53 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 126dbe6b4da3e7240a67b2ee586c128e
   - enabled: 1
+    path: Assets/thomas/level_1.unity
+    guid: aa55068ea17ba1d42a5c6d8766f912c9
+  - enabled: 1
+    path: Assets/thomas/level_WIP_3.unity
+    guid: 7fe691de6fdfbf74d9fa4aa646226cf0
+  - enabled: 1
     path: Assets/thomas/level_WIP_6.unity
     guid: 5a3d991efb885b44b8023c14e99595ee
+  - enabled: 1
+    path: Assets/thomas/level_2.unity
+    guid: 5d3410b14955bb84bbf179730f7a6ffa
+  - enabled: 1
+    path: Assets/thomas/level_WIP_1.unity
+    guid: e90fa333f81bca444af6106a6190e91e
   - enabled: 1
     path: Assets/thomas/level_WIP_8.unity
     guid: e688fd94db27817409ac89684f7a0c3c
   - enabled: 1
-    path: Assets/thomas/level_WIP_4.unity
-    guid: 8e4816274b040b247920f084fb48880d
+    path: Assets/thomas/level_3.unity
+    guid: 282972183ecac2e418722eb714d1e721
   - enabled: 1
     path: Assets/thomas/level_WIP_7.unity
     guid: d66263a4766631243a93022912e9fd5d
   - enabled: 1
-    path: Assets/thomas/level_3.unity
-    guid: 282972183ecac2e418722eb714d1e721
+    path: Assets/thomas/level_WIP_4.unity
+    guid: 8e4816274b040b247920f084fb48880d
   - enabled: 1
     path: Assets/thomas/level_WIP_2.unity
     guid: 23fe6129d80d23c49bf262ddbdbd3f31
+  - enabled: 1
+    path: Assets/thomas/level_4.unity
+    guid: 2be8262a4f698564eab6cc0a3e9e88e6
+  - enabled: 1
+    path: Assets/thomas/level_WIP_5.unity
+    guid: 09df044c0e138cc40a07d01edb773b81
+  - enabled: 1
+    path: Assets/thomas/level_7.unity
+    guid: decc6c8f87aecc441a42ea42199d7053
   - enabled: 1
     path: Assets/thomas/level_5.unity
     guid: cc4d704c8ac16f64da398daa85a01754
   - enabled: 1
     path: Assets/thomas/level_6.unity
     guid: 3ffb6111a92cd1d4aab76ce1275ed8a1
+  - enabled: 1
+    path: Assets/thomas/level_8.unity
+    guid: 9a1958846f0695d4280f58a298ee075d
   - enabled: 1
     path: Assets/thomas/level_9.unity
     guid: e0ea1f85b5e4d2844951458f12383143

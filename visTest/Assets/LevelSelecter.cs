@@ -6,8 +6,8 @@ public class LevelSelecter : MonoBehaviour
 {
     public SceneFader fader;
 
-    public void Select (string levelName)
+    public void Select (int buildINdex)
     {
-        fader.FadeTo(levelName);
+        fader.FadeTo(buildINdex);
     }
 }

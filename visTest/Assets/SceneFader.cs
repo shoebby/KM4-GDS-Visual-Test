@@ -14,9 +14,9 @@ public class SceneFader : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    public void FadeTo(string scene)
+    public void FadeTo(int sceneIndex)
     {
-        StartCoroutine(FadeOut(scene));
+        StartCoroutine(FadeOut(sceneIndex));
     }
 
     IEnumerator FadeIn()
@@ -34,7 +34,7 @@ public class SceneFader : MonoBehaviour
         //Load Scene
     }
 
-    IEnumerator FadeOut(string scene)
+    IEnumerator FadeOut(int sceneIndex)
     {
         float t = 0f;
 
@@ -47,6 +47,6 @@ public class SceneFader : MonoBehaviour
         }
 
         //Load Scene
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
